@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <g transform="translate(140,20)" fill="none" stroke="#8f4d17" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M62 95 a28 28 0 1 1 10-54 a34 34 0 0 1 56 0 a28 28 0 1 1 10 54" />
+    <path d="M104 44 q20 -2 22 24" />
+    <path d="M62 95 l5 48 M83 95 l1 50 M104 95 l1 50 M125 95 l5 48" />
+    <path d="M58 142 q46 14 92 0" />
+  </g>
+  <text x="200" y="245" font-family="Georgia, 'Brush Script MT', cursive" font-size="34" fill="#8f4d17" text-anchor="middle">Shakti Caterers</text>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="13" letter-spacing="1" fill="#78716c" text-anchor="middle">EXPERIENCE BLISS IN EVERY BITE</text>
+</svg>
