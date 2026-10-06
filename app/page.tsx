@@ -49,6 +49,7 @@ export default async function HomePage() {
             shortDescription: p.shortDescription,
             ratePerKg: Number(p.ratePerKg),
             isSugarFree: p.isSugarFree,
+            imageUrl: p.imageUrl,
           }))}
         />
       </section>

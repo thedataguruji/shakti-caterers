@@ -28,6 +28,7 @@ export default async function ProductsPage() {
             shortDescription: p.shortDescription,
             ratePerKg: Number(p.ratePerKg),
             isSugarFree: p.isSugarFree,
+            imageUrl: p.imageUrl,
           }))}
         />
       </div>

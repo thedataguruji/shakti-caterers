@@ -8,14 +8,23 @@ export interface ProductCardData {
   shortDescription: string;
   ratePerKg: number;
   isSugarFree: boolean;
+  imageUrl?: string | null;
 }
 
 export function ProductCard({ product }: { product: ProductCardData }) {
   return (
     <Card className="flex flex-col overflow-hidden">
-      <div className="flex h-40 items-center justify-center bg-gradient-to-br from-saffron-100 to-brand-100 text-4xl">
-        🍬
-      </div>
+      {product.imageUrl ? (
+        <img
+          src={product.imageUrl}
+          alt={product.name}
+          className="h-40 w-full object-cover"
+        />
+      ) : (
+        <div className="flex h-40 items-center justify-center bg-gradient-to-br from-saffron-100 to-brand-100 text-4xl">
+          🍬
+        </div>
+      )}
       <div className="flex flex-1 flex-col gap-2 p-4">
         <div className="flex items-start justify-between gap-2">
           <h3 className="font-semibold text-stone-900">{product.name}</h3>

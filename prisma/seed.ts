@@ -10,8 +10,10 @@ const products = [
     shortDescription:
       "Our signature Pure Ghee Mohanthal, slow-roasted and infused with jaifal and javanti.",
     description: `Our signature Pure Ghee Mohanthal is made with premium chana flour, Amul ghee, milk and sulphur-free sugar. Traditionally slow-roasted to bring out its rich, nutty flavour, it is delicately infused with jaifal and javanti for an authentic aroma. Finished with pista and badam katri, it combines classic mithai craftsmanship with an elegant look and a delightful crunch.`,
-    ratePerKg: 900,
+    ratePerKg: 660,
+    imageUrl: "/images/products/mohanthal.jpg",
     isSugarFree: false,
+    isActive: true,
     sortOrder: 1,
   },
   {
@@ -20,8 +22,10 @@ const products = [
     shortDescription:
       "Made with 65% premium-grade kaju, finished with a delicate layer of Jain varakh.",
     description: `Made with 65% premium-grade kaju, carefully selected directly from trusted manufacturers, our Kaju Katli reflects our focus on purity and quality. The kaju is gently washed to remove dust and enhance its natural whiteness, then freshly ground and roasted with our perfectly balanced chasni. Finished with a delicate layer of Jain varakh, our Kaju Katli is smooth, rich and naturally indulgent — with the authentic taste of premium kaju in every bite.`,
-    ratePerKg: 1200,
+    ratePerKg: 980,
+    imageUrl: "/images/products/kaju-katli.jpg",
     isSugarFree: false,
+    isActive: true,
     sortOrder: 2,
   },
   {
@@ -30,8 +34,10 @@ const products = [
     shortDescription:
       "100% sugar-free, made with finely ground khajur roasted in pure ghee.",
     description: `Naturally sweet and 100% sugar-free, our Khajur Bites are made with finely ground khajur, gently roasted in pure ghee to deepen its rich flavour. Badam and kaju are separately roasted in pure ghee, then blended with the khajur to create a naturally indulgent, nutty bite. Finished with pista katri for an elegant touch, these bites are wholesome, refined and completely free from added sugar.`,
-    ratePerKg: 700,
+    ratePerKg: 1180,
+    imageUrl: "/images/products/khajoor-bites.jpg",
     isSugarFree: true,
+    isActive: true,
     sortOrder: 3,
   },
   {
@@ -40,9 +46,27 @@ const products = [
     shortDescription:
       "Sugar-free anjeer balls with roasted badam and kaju, garnished with khas khas.",
     description: `Made with fine-quality anjeer, our Anjeer Dry Fruit Balls are prepared by grinding and gently roasting the anjeer in pure ghee to bring out its natural richness. Roasted badam and kaju are then blended in, creating a deliciously nutty and naturally sweet bite. Finished with a delicate garnish of khas khas, these are completely sugar-free and have become a favourite among our customers.`,
-    ratePerKg: 750,
+    ratePerKg: 1380,
+    imageUrl: "/images/products/anjeer-dryfruit-delight.jpg",
     isSugarFree: true,
+    isActive: true,
     sortOrder: 4,
+  },
+  {
+    // NOTE: price and full description are missing from the source PDF itself
+    // (the text is corrupted/cut off at the source, not a parsing issue on our
+    // end). isActive is false so it stays hidden from customers until you give
+    // us the real price + full description, then flip it on via /admin/products.
+    slug: "kesar-kaju-katri",
+    name: "Kesar Kaju Katri",
+    shortDescription:
+      "An opulent saffron-infused twist on our classic Kaju Katli.",
+    description: `An opulent twist on the classic Kaju Katli, infused with authentic Kashmiri saffron. (Full description pending — the source document's text was cut off here.)`,
+    ratePerKg: 0,
+    imageUrl: "/images/products/kesar-kaju-katri.jpg",
+    isSugarFree: false,
+    isActive: false,
+    sortOrder: 5,
   },
 ];
 

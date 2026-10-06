@@ -19,9 +19,17 @@ export default async function ProductDetailPage({
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
-      <div className="flex h-56 items-center justify-center rounded-lg bg-gradient-to-br from-saffron-100 to-brand-100 text-6xl">
-        🍬
-      </div>
+      {product.imageUrl ? (
+        <img
+          src={product.imageUrl}
+          alt={product.name}
+          className="h-72 w-full rounded-lg object-cover sm:h-96"
+        />
+      ) : (
+        <div className="flex h-56 items-center justify-center rounded-lg bg-gradient-to-br from-saffron-100 to-brand-100 text-6xl">
+          🍬
+        </div>
+      )}
       <div className="mt-6 flex items-start justify-between gap-4">
         <h1 className="text-3xl font-bold text-brand-800">{product.name}</h1>
         {product.isSugarFree && (
